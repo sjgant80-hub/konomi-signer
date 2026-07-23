@@ -1,0 +1,19 @@
+{
+  "name": "konomi-signer",
+  "version": "0.1.0",
+  "description": "Local loopback HTTP service that mints Ed25519-signed, time-boxed trial-licence envelopes; the private key is read from the environment and never persisted.",
+  "type": "module",
+  "main": "trial-sign-server.mjs",
+  "bin": {
+    "konomi-signer": "trial-sign-server.mjs"
+  },
+  "scripts": {
+    "start": "node trial-sign-server.mjs",
+    "test": "node test.mjs"
+  },
+  "author": "Simon Gant",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  }
+}
